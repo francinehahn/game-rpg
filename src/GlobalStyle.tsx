@@ -11,12 +11,11 @@ export const GlobalStyle = createGlobalStyle `
 
 export const Container = styled.section `
     background-color: #24282F;
-    min-height: 100vh;
+    height: 100vh;
     section {
-        height: 480px;
-        width: 480px;
+        margin: auto;
+        height: 520px;
+        width: 966px;
         background-image: url(${map});
-        background-position: left top;
-        background-size: 100%;
     }
 `
