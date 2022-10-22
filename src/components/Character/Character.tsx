@@ -3,7 +3,7 @@ import {CharacterSides} from '../../types/CharacterSides'
 
 type Props = {
     x: number,
-    y: number
+    y: number,
     side: CharacterSides
 }
 
@@ -16,9 +16,8 @@ export function Character ({x, y, side} : Props) {
         up: -90
     }
 
-    return (
-        <Container left={x * size} top={y * size} size={size} sidePosition={sides[side] ?? 0}>
-            
-        </Container>
-    )
+    let shadow
+    y < 12? shadow = '#008000be' : shadow = '#fa0202bd'
+
+    return <Container left={x * size} top={y * size} size={size} shadow={shadow} sidePosition={sides[side] ?? 0}/>
 }
