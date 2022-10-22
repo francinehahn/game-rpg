@@ -11,6 +11,7 @@ This project was inspired by RPG games and was developed to practice the followi
 * React
 * Typescript
 * Styled-components
+* HTML
 
 ## Link to access the project
 [www.game-rpg.com](https://combative-soap.surge.sh/)
